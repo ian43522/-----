@@ -1,0 +1,1127 @@
+{# Параметры страницы #}
+
+{% set pageType = "innerPage" %}
+
+
+{# Параметры страницы #}
+
+{% extends "layouts/_layout.njk" %}
+{% block content %}
+
+
+	<div id="product-category" class="container product-category" style="transform: none;">
+
+		<div class="row" style="transform: none;">
+			<aside id="column-left" class="col-sm-3 hidden-xs Lwidth" style="width: 24%; position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+
+				<div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none;">
+					<div class="left-right-inner">
+						<div class="panel panel-default category-treeview">
+							<div class="panel-heading">Категории</div>
+							<ul class="list-group" style="display: block;">
+								<li class="category-li">
+									<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=159" class="list-group-item">Cool-Down</a>
+									<!-- Display all category - child items list -->
+								</li>
+
+								<li class="category-li category-active active">
+									<div class="list-tree"></div>
+									<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20" class="list-group-item active">Army Clothes</a>
+									<ul style="display: block;">
+
+										<li>
+											<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_141" class="list-group-item current-child-item">Barbells</a>
+										</li>
+
+										<li>
+											<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_140" class="list-group-item current-child-item">Isometrics</a>
+										</li>
+
+										<li>
+											<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_26" class="list-group-item current-child-item">Compound</a>
+										</li>
+
+										<li>
+											<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_132" class="list-group-item current-child-item">Hack Squat</a>
+										</li>
+									</ul>
+								</li>
+								<li class="category-li">
+									<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=25" class="list-group-item">Gymkhana</a>
+									<!-- Display all category - child items list -->
+								</li>
+								<li class="category-li">
+									<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=67" class="list-group-item">Workout</a>
+									<!-- Display all category - child items list -->
+								</li>
+							</ul>
+						</div>
+						<div class="panel panel-default option-filter">
+							<div class="panel-heading">Refine Search</div>
+							<div class="list-group option-filter-box" style="display: block;">
+								<div class="list-group" style="display: block;">
+									<div class="list-group-items">
+										<a class="list-group-item">Colors</a>
+										<div class="list-group-item">
+											<div id="filter-group1">
+												<div class="checkbox">
+													<label>
+														<span class="checkbox-wrapper"><input type="checkbox" name="filter[]" value="1" class="checkboxid"></span>
+					Black
+									  </label>
+												</div>
+												<div class="checkbox">
+													<label>
+														<span class="checkbox-wrapper"><input type="checkbox" name="filter[]" value="2" class="checkboxid"></span>
+					White
+									  </label>
+												</div>
+												<div class="checkbox">
+													<label>
+														<span class="checkbox-wrapper"><input type="checkbox" name="filter[]" value="3" class="checkboxid"></span>
+					Silver
+									  </label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="list-group-items">
+										<a class="list-group-item">Price</a>
+										<div class="list-group-item">
+											<div id="filter-group2">
+												<div class="checkbox">
+													<label>
+														<span class="checkbox-wrapper"><input type="checkbox" name="filter[]" value="4" class="checkboxid"></span>
+					$100 and belov
+									  </label>
+												</div>
+												<div class="checkbox">
+													<label>
+														<span class="checkbox-wrapper"><input type="checkbox" name="filter[]" value="5" class="checkboxid"></span>
+					$100 to $200
+									  </label>
+												</div>
+												<div class="checkbox">
+													<label>
+														<span class="checkbox-wrapper"><input type="checkbox" name="filter[]" value="6" class="checkboxid"></span>
+					$200 and more
+									  </label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="list-group-items">
+										<a class="list-group-item">Size</a>
+										<div class="list-group-item">
+											<div id="filter-group3">
+												<div class="checkbox">
+													<label>
+														<span class="checkbox-wrapper"><input type="checkbox" name="filter[]" value="7" class="checkboxid"></span>
+					Large
+									  </label>
+												</div>
+												<div class="checkbox">
+													<label>
+														<span class="checkbox-wrapper"><input type="checkbox" name="filter[]" value="8" class="checkboxid"></span>
+					Medium
+									  </label>
+												</div>
+												<div class="checkbox">
+													<label>
+														<span class="checkbox-wrapper"><input type="checkbox" name="filter[]" value="9" class="checkboxid"></span>
+					Small
+									  </label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel-footer text-right">
+									<button type="button" id="button-filter" class="btn btn-primary">Refine Search</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-viewport">
+							<div id="banner0" class="swiper-container swiper-container-horizontal swiper-container-fade">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide swiper-slide-active" style="width: 272px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+										<a href="#"><img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/banners/left-banner-272x401.jpg" alt="Left-Banner" class="img-responsive"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="featured-carousel products-list">
+							<div class="box-heading">
+								<h3>Featured</h3>
+							</div>
+							<div class="featured-items products-carousel row" style="display: block;">
+
+								<div class="product-thumb transition" style="width: 240px;">
+									<div class="image col-xs-5 col-sm-4 col-md-4">
+										<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=43">
+											<img class="image_thumb" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/09-70x91.jpg" title="Браслет из паракорда" alt="Браслет из паракорда">
+											<img class="image_thumb_swap" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/09-1-70x91.jpg" title="Браслет из паракорда" alt="Браслет из паракорда">
+										</a>
+
+									</div>
+									<div class="thumb-description col-xs-7 col-sm-8 col-md-8" >
+										<div class="caption">
+											<h4>
+												<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=43">Браслет из паракорда</a>
+											</h4>
+											<div class="price">
+						450 ₽
+
+						<span class="price-tax">Ex Tax: 150 ₽</span>
+											</div>
+											<div class="button-group">
+												<button class="btn-cart " type="button" title="Добавить в корзину" onclick="cart.add('43')">
+
+													<i class="material-icons">shopping_cart</i>
+													<span class="hidden-xs hidden-sm hidden-md">Добавить в корзину
+						</span>
+													<span class="loading">
+														<i class="material-icons">cached</i></span></button>
+												<button class="btn-wishlist" title="Добавить в виш лист" onclick="wishlist.add('43');">
+													<i class="material-icons icon-wishlist">favorite_border</i>
+													<span title="Добавить в виш лист">Добавить в виш лист</span>
+													<span class="loading">
+														<i class="material-icons">cached</i>
+													</span>
+												</button>
+												<button class="btn-compare" title="Add to compare" onclick="compare.add('43');">
+													<i class="material-icons icon-exchange">equalizer</i>
+													<span title="Add to compare">Add to compare</span>
+													<span class="loading">
+														<i class="material-icons">cached</i>
+													</span>
+												</button>
+												<button class="btn-quickview" type="button" title="" onclick="tt_quickview.ajaxView('https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=43')">
+													<i class="material-icons quick_view_icon">visibility</i>
+													<span title=""></span>
+													<span class="loading">
+														<i class="material-icons">cached</i>
+													</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="product-thumb transition">
+									<div class="image col-xs-5 col-sm-4 col-md-4">
+										<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=40">
+											<img class="image_thumb" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/19-70x91.jpg" title="Военная сумка" alt="Военная сумка">
+											<img class="image_thumb_swap" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/19-1-70x91.jpg" title="Военная сумка" alt="Военная сумка">
+										</a>
+
+									</div>
+									<div class="thumb-description col-xs-7 col-sm-8 col-md-8">
+										<div class="caption">
+											<h4>
+												<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=40">Военная сумка</a>
+											</h4>
+											<div class="price">
+						7000 ₽
+
+						<span class="price-tax">Ex Tax: 7600 ₽</span>
+											</div>
+											<div class="button-group">
+												<button class="btn-cart " type="button" title="Добавить в корзину" onclick="cart.add('40')">
+
+													<i class="material-icons">shopping_cart</i>
+													<span class="hidden-xs hidden-sm hidden-md">Добавить в корзину
+						</span>
+													<span class="loading">
+														<i class="material-icons">cached</i></span></button>
+												<button class="btn-wishlist" title="Добавить в виш лист" onclick="wishlist.add('40');">
+													<i class="material-icons icon-wishlist">favorite_border</i>
+													<span title="Добавить в виш лист">Добавить в виш лист</span>
+													<span class="loading">
+														<i class="material-icons">cached</i>
+													</span>
+												</button>
+												<button class="btn-compare" title="Add to compare" onclick="compare.add('40');">
+													<i class="material-icons icon-exchange">equalizer</i>
+													<span title="Add to compare">Add to compare</span>
+													<span class="loading">
+														<i class="material-icons">cached</i>
+													</span>
+												</button>
+												<button class="btn-quickview" type="button" title="" onclick="tt_quickview.ajaxView('https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=40')">
+													<i class="material-icons quick_view_icon">visibility</i>
+													<span title=""></span>
+													<span class="loading">
+														<i class="material-icons">cached</i>
+													</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="product-thumb transition">
+									<div class="image col-xs-5 col-sm-4 col-md-4">
+										<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=42">
+											<img class="image_thumb" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/01-70x91.jpg" title="Пуленепробиваемый жилет" alt="Пуленепробиваемый жилет">
+											<img class="image_thumb_swap" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/01-1-70x91.jpg" title="Пуленепробиваемый жилет" alt="Пуленепробиваемый жилет">
+										</a>
+
+									</div>
+									<div class="thumb-description col-xs-7 col-sm-8 col-md-8">
+										<div class="caption">
+											<div class="rating">
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_off">star_border</i>
+												</span>
+											</div>
+											<h4>
+												<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=42">Пуленепробиваемый жилет</a>
+											</h4>
+											<div class="price">
+						8509 ₽
+
+						<span class="price-tax">Ex Tax: 78.46 ₽</span>
+											</div>
+											<div class="button-group">
+												<button class="btn-cart " type="button" title="Добавить в корзину" onclick="cart.add('42')">
+
+													<i class="material-icons">shopping_cart</i>
+													<span class="hidden-xs hidden-sm hidden-md">Добавить в корзину
+						</span>
+													<span class="loading">
+														<i class="material-icons">cached</i></span></button>
+												<button class="btn-wishlist" title="Добавить в виш лист" onclick="wishlist.add('42');">
+													<i class="material-icons icon-wishlist">favorite_border</i>
+													<span title="Добавить в виш лист">Добавить в виш лист</span>
+													<span class="loading">
+														<i class="material-icons">cached</i>
+													</span>
+												</button>
+												<button class="btn-compare" title="Add to compare" onclick="compare.add('42');">
+													<i class="material-icons icon-exchange">equalizer</i>
+													<span title="Add to compare">Add to compare</span>
+													<span class="loading">
+														<i class="material-icons">cached</i>
+													</span>
+												</button>
+												<button class="btn-quickview" type="button" title="" onclick="tt_quickview.ajaxView('https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=42')">
+													<i class="material-icons quick_view_icon">visibility</i>
+													<span title=""></span>
+													<span class="loading">
+														<i class="material-icons">cached</i>
+													</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="sidebar panel panel-default information-list">
+							<div class="panel-heading">Information</div>
+							<div class="list-group" style="display: block;">
+								<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=information/information&amp;information_id=4" class="list-group-item">About Us</a>
+								<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=information/information&amp;information_id=6" class="list-group-item">Delivery Information</a>
+								<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=information/information&amp;information_id=3" class="list-group-item">Privacy Policy</a>
+								<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=information/information&amp;information_id=5" class="list-group-item">Terms &amp; Conditions</a>
+								<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=information/contact" class="list-group-item">Contact Us</a>
+								<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=information/sitemap" class="list-group-item">Site Map</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</aside>
+
+			<div id="content" class="col-sm-9 Cwidth" style="width: 76%; position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+				<!-- Category Description START -->
+
+				<!-- Category Description END -->
+				<!-- Category filter START -->
+
+				<!-- Category filter END -->
+				<!-- Category products START -->
+
+				<!-- Category products END -->
+				<!-- Category pagination START -->
+
+				<!-- Category pagination END -->
+				<div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none; top: 0px;">
+					<div class="category-description">
+						<div class="row">
+							<div class="col-sm-5 category-image">
+								<div class="category-bg"><img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/banners/category-img-01-630x630.jpg" alt="Army Clothes" title="Army Clothes" class="img-thumbnail"></div>
+							</div>
+
+							<div class="block-description col-sm-7">
+								<div class="category-content">
+									<p>
+	Example of category description text</p>
+									<p>This category includes all the basics of your wardrobe and much more:<br>
+ shoes, accessories, printed t-shirts, feminine dresses, women's jeans!</p>
+								</div>
+								<!-- Category listing START -->
+								<div class="category-list">
+									<h3>Refine Search</h3>
+									<div class="row">
+										<div class="col-sm-12">
+											<ul>
+												<li>
+													<div class="subcategory-image">
+														<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_141">
+															<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/banners/category-img-02-90x90.jpg" alt=""></a>
+													</div>
+													<h5>
+														<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_141">Barbells</a>
+													</h5>
+												</li>
+												<li>
+													<div class="subcategory-image">
+														<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_140">
+															<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/banners/category-img-01-90x90.jpg" alt=""></a>
+													</div>
+													<h5>
+														<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_140">Isometrics</a>
+													</h5>
+												</li>
+												<li>
+													<div class="subcategory-image">
+														<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_26">
+															<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/banners/category-img-03-90x90.jpg" alt=""></a>
+													</div>
+													<h5>
+														<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_26">Compound</a>
+													</h5>
+												</li>
+												<li>
+													<div class="subcategory-image">
+														<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_132">
+															<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/banners/category-img-04-90x90.jpg" alt=""></a>
+													</div>
+													<h5>
+														<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_132">Hack Squat</a>
+													</h5>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- Category listing END -->
+								<p class="category-compare">
+									<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/compare" id="compare-total">Product Compare (0)</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="category-filter">
+						<!-- Grid-List Buttons -->
+						<div class="col-md-2 filter-grid-list">
+							<div class="btn-group">
+								<button type="button" id="grid-view2" class="btn btn-default active" data-toggle="tooltip" title="" data-original-title="4-Grid">
+									<i class="material-icons grid2-on">view_comfy</i>
+								</button>
+								<button type="button" id="grid-view" class="btn btn-default" data-toggle="tooltip" title="" data-original-title="3-Grid">
+									<i class="material-icons grid-on">grid_on</i>
+								</button>
+								<button type="button" id="grid-view1" class="btn btn-default" data-toggle="tooltip" title="" data-original-title="2-Grid">
+									<i class="material-icons grid1-on">window</i>
+								</button>
+								<button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="" data-original-title="List">
+									<i class="material-icons list-on">
+format_list_bulleted</i>
+								</button>
+								<button type="button" id="short-view" class="btn btn-default" data-toggle="tooltip" title="" data-original-title="Short">
+									<i class="material-icons">dehaze
+</i>
+								</button>
+							</div>
+						</div>
+						<!-- Show Products Selection -->
+						<div class="filter-show">
+							<div class="col-md-4 text-right filter-text">
+								<label class="input-group-addon control-label" for="input-limit">Show:</label>
+							</div>
+							<div class="col-md-8 text-right filter-selection">
+								<div class="select-wrapper">
+									<select id="input-limit" class="form-control" onchange="location = this.value;">
+
+										<option value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;limit=9" selected="selected">9</option>
+
+										<option value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;limit=25">25</option>
+
+										<option value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;limit=50">50</option>
+
+										<option value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;limit=75">75</option>
+
+										<option value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;limit=100">100</option>
+
+									</select>
+								</div>
+							</div>
+						</div>
+						<!-- Sort By Selection -->
+						<div class="filter-sort-by">
+							<div class="col-md-3 text-right filter-text">
+								<label class="input-group-addon control-label" for="input-sort">Sort By:</label>
+							</div>
+							<div class="col-md-9 text-right filter-selection">
+								<div class="select-wrapper">
+									<select id="input-sort" class="form-control" onchange="location = this.value;">
+
+										<option value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;sort=p.sort_order&amp;order=ASC" selected="selected">Default</option>
+
+										<option value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;sort=pd.name&amp;order=ASC">Name (A - Z)</option>
+
+										<option value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;sort=pd.name&amp;order=DESC">Name (Z - A)</option>
+
+										<option value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;sort=p.price&amp;order=ASC">Price (Low &gt; High)</option>
+
+										<option value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;sort=p.price&amp;order=DESC">Price (High &gt; Low)</option>
+
+										<option value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;sort=rating&amp;order=DESC">Rating (Highest)</option>
+
+										<option value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;sort=rating&amp;order=ASC">Rating (Lowest)</option>
+
+										<option value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;sort=p.model&amp;order=ASC">Model (A - Z)</option>
+
+										<option value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;sort=p.model&amp;order=DESC">Model (Z - A)</option>
+
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="category-products">
+						<div class="row">
+							<div class="product-layout product-grid2 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<div class="product-thumb row">
+									<div class="image col-xs-12">
+
+										<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=41">
+											<img class="image_thumb" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/05-285x371.jpg" title="Военная куртка" alt="Военная куртка">
+											<img class="image_thumb_swap" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/05-1-285x371.jpg" title="Военная куртка" alt="Военная куртка">
+										</a>
+										<div class="button-group">
+											<button class="btn-cart " type="button" title="Добавить в корзину" onclick="cart.add('41')">
+
+												<i class="material-icons">shopping_cart</i>
+												<span class="hidden-xs hidden-sm hidden-md">Добавить в корзину
+                                            </span>
+												<span class="loading">
+													<i class="material-icons">cached</i></span></button>
+											<button class="btn-wishlist" title="Добавить в виш лист" onclick="wishlist.add('41');">
+												<i class="material-icons icon-wishlist">favorite_border</i>
+												<span title="Добавить в виш лист">Добавить в виш лист</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-compare" title="Add to compare" onclick="compare.add('41');">
+												<i class="material-icons icon-exchange">equalizer</i>
+												<span title="Add to compare">Add to compare</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-quickview" type="button" title="" onclick="tt_quickview.ajaxView('https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=41')">
+												<i class="material-icons quick_view_icon">visibility</i>
+												<span title=""></span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+										</div>
+									</div>
+
+									<div class="thumb-description col-xs-12">
+										<div class="caption">
+											<div class="rating">
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_off">star_border</i>
+												</span>
+											</div>
+											<h4>
+												<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=41">Военная куртка</a>
+											</h4>
+											<p class="description">Video in your pocket.
+
+		Its the small iPod with one very big idea: video. The worlds most popula..</p>
+
+											<div class="product-price-and-shipping">
+												<div class="price">
+                                                          8509 ₽
+                                                         <span class="price-tax">Ex Tax: 78.46 ₽</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="product-layout product-grid2 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<div class="product-thumb row">
+									<div class="image col-xs-12">
+
+										<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=42">
+											<img class="image_thumb" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/01-285x371.jpg" title="Пуленепробиваемый жилет" alt="Пуленепробиваемый жилет">
+											<img class="image_thumb_swap" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/01-1-285x371.jpg" title="Пуленепробиваемый жилет" alt="Пуленепробиваемый жилет">
+										</a>
+										<div class="button-group">
+											<button class="btn-cart " type="button" title="Добавить в корзину" onclick="cart.add('42')">
+
+												<i class="material-icons">shopping_cart</i>
+												<span class="hidden-xs hidden-sm hidden-md">Добавить в корзину
+                                            </span>
+												<span class="loading">
+													<i class="material-icons">cached</i></span></button>
+											<button class="btn-wishlist" title="Добавить в виш лист" onclick="wishlist.add('42');">
+												<i class="material-icons icon-wishlist">favorite_border</i>
+												<span title="Добавить в виш лист">Добавить в виш лист</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-compare" title="Add to compare" onclick="compare.add('42');">
+												<i class="material-icons icon-exchange">equalizer</i>
+												<span title="Add to compare">Add to compare</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-quickview" type="button" title="" onclick="tt_quickview.ajaxView('https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=42')">
+												<i class="material-icons quick_view_icon">visibility</i>
+												<span title=""></span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+										</div>
+									</div>
+
+									<div class="thumb-description col-xs-12">
+										<div class="caption">
+											<div class="rating">
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_off">star_border</i>
+												</span>
+											</div>
+											<h4>
+												<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=42">Пуленепробиваемый жилет</a>
+											</h4>
+											<p class="description">THE BLUENESS OF THE RESULTS REPRESENTS.
+				Private Labeling Non-herbal Hair Food Olive Oil, Liquid..</p>
+
+											<div class="product-price-and-shipping">
+												<div class="price">
+                                                          8509 ₽
+                                                         <span class="price-tax">Ex Tax: 78.46 ₽</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="product-layout product-grid2 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<div class="product-thumb row">
+									<div class="image col-xs-12">
+
+										<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=44">
+											<img class="image_thumb" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/10-285x371.jpg" title="Камуфляжные карго штаны" alt="Камуфляжные карго штаны">
+											<img class="image_thumb_swap" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/10-1-285x371.jpg" title="Камуфляжные карго штаны" alt="Камуфляжные карго штаны">
+										</a>
+										<div class="button-group">
+											<button class="btn-cart " type="button" title="Добавить в корзину" onclick="cart.add('44')">
+
+												<i class="material-icons">shopping_cart</i>
+												<span class="hidden-xs hidden-sm hidden-md">Добавить в корзину
+                                            </span>
+												<span class="loading">
+													<i class="material-icons">cached</i></span></button>
+											<button class="btn-wishlist" title="Добавить в виш лист" onclick="wishlist.add('44');">
+												<i class="material-icons icon-wishlist">favorite_border</i>
+												<span title="Добавить в виш лист">Добавить в виш лист</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-compare" title="Add to compare" onclick="compare.add('44');">
+												<i class="material-icons icon-exchange">equalizer</i>
+												<span title="Add to compare">Add to compare</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-quickview" type="button" title="" onclick="tt_quickview.ajaxView('https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=44')">
+												<i class="material-icons quick_view_icon">visibility</i>
+												<span title=""></span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+										</div>
+									</div>
+
+									<div class="thumb-description col-xs-12">
+										<div class="caption">
+											<h4>
+												<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=44">Камуфляжные карго штаны</a>
+											</h4>
+											<p class="description">MacBook Air is ultrathin, ultraportable, and ultra unlike anything else. But you don’t lose in..</p>
+
+											<div class="product-price-and-shipping">
+												<div class="price">
+                                                          8384 ₽
+                                                         <span class="price-tax">Ex Tax: 784.60 ₽</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="product-layout product-grid2 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<div class="product-thumb row">
+									<div class="image col-xs-12">
+
+										<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=35">
+											<img class="image_thumb" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/14-285x371.jpg" title="Камуфляжная куртка" alt="Камуфляжная куртка">
+											<img class="image_thumb_swap" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/14-1-285x371.jpg" title="Камуфляжная куртка" alt="Камуфляжная куртка">
+										</a>
+										<div class="button-group">
+											<button class="btn-cart " type="button" title="Добавить в корзину" onclick="cart.add('35')">
+
+												<i class="material-icons">shopping_cart</i>
+												<span class="hidden-xs hidden-sm hidden-md">Добавить в корзину
+                                            </span>
+												<span class="loading">
+													<i class="material-icons">cached</i></span></button>
+											<button class="btn-wishlist" title="Добавить в виш лист" onclick="wishlist.add('35');">
+												<i class="material-icons icon-wishlist">favorite_border</i>
+												<span title="Добавить в виш лист">Добавить в виш лист</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-compare" title="Add to compare" onclick="compare.add('35');">
+												<i class="material-icons icon-exchange">equalizer</i>
+												<span title="Add to compare">Add to compare</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-quickview" type="button" title="" onclick="tt_quickview.ajaxView('https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=35')">
+												<i class="material-icons quick_view_icon">visibility</i>
+												<span title=""></span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+										</div>
+									</div>
+
+									<div class="thumb-description col-xs-12">
+										<div class="caption">
+											<h4>
+												<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=35">Камуфляжная куртка</a>
+											</h4>
+											<p class="description">Product 8..</p>
+
+											<div class="product-price-and-shipping">
+												<div class="price">
+                                                          8509 ₽
+                                                         <span class="price-tax">Ex Tax: 78.46 ₽</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="product-layout product-grid2 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<div class="product-thumb row">
+									<div class="image col-xs-12">
+
+										<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=32">
+											<img class="image_thumb" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/08-285x371.jpg" title="Рюкзак Eberlestock Halftrack" alt="Рюкзак Eberlestock Halftrack">
+											<img class="image_thumb_swap" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/08-1-285x371.jpg" title="Рюкзак Eberlestock Halftrack" alt="Рюкзак Eberlestock Halftrack">
+										</a>
+										<div class="button-group">
+											<button class="btn-cart " type="button" title="Добавить в корзину" onclick="cart.add('32')">
+
+												<i class="material-icons">shopping_cart</i>
+												<span class="hidden-xs hidden-sm hidden-md">Добавить в корзину
+                                            </span>
+												<span class="loading">
+													<i class="material-icons">cached</i></span></button>
+											<button class="btn-wishlist" title="Добавить в виш лист" onclick="wishlist.add('32');">
+												<i class="material-icons icon-wishlist">favorite_border</i>
+												<span title="Добавить в виш лист">Добавить в виш лист</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-compare" title="Add to compare" onclick="compare.add('32');">
+												<i class="material-icons icon-exchange">equalizer</i>
+												<span title="Add to compare">Add to compare</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-quickview" type="button" title="" onclick="tt_quickview.ajaxView('https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=32')">
+												<i class="material-icons quick_view_icon">visibility</i>
+												<span title=""></span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+										</div>
+									</div>
+
+									<div class="thumb-description col-xs-12">
+										<div class="caption">
+											<h4>
+												<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=32">Рюкзак Eberlestock Halftrack</a>
+											</h4>
+											<p class="description">Revolutionary multi-touch interface.
+	iPod touch features the same multi-touch screen technology as..</p>
+
+											<div class="product-price-and-shipping">
+												<div class="price">
+                                                          8509 ₽
+                                                         <span class="price-tax">Ex Tax: 78.46 ₽</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="product-layout product-grid2 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<div class="product-thumb row">
+									<div class="image col-xs-12">
+
+										<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=28">
+											<img class="image_thumb" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/04-285x371.jpg" title="Бейсболка с вышивкой" alt="Бейсболка с вышивкой">
+											<img class="image_thumb_swap" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/04-1-285x371.jpg" title="Бейсболка с вышивкой" alt="Бейсболка с вышивкой">
+										</a>
+										<div class="button-group">
+											<button class="btn-cart " type="button" title="Добавить в корзину" onclick="cart.add('28')">
+
+												<i class="material-icons">shopping_cart</i>
+												<span class="hidden-xs hidden-sm hidden-md">Добавить в корзину
+                                            </span>
+												<span class="loading">
+													<i class="material-icons">cached</i></span></button>
+											<button class="btn-wishlist" title="Добавить в виш лист" onclick="wishlist.add('28');">
+												<i class="material-icons icon-wishlist">favorite_border</i>
+												<span title="Добавить в виш лист">Добавить в виш лист</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-compare" title="Add to compare" onclick="compare.add('28');">
+												<i class="material-icons icon-exchange">equalizer</i>
+												<span title="Add to compare">Add to compare</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-quickview" type="button" title="" onclick="tt_quickview.ajaxView('https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=28')">
+												<i class="material-icons quick_view_icon">visibility</i>
+												<span title=""></span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+										</div>
+									</div>
+
+									<div class="thumb-description col-xs-12">
+										<div class="caption">
+											<div class="rating">
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_on">star</i>
+												</span>
+												<span class="fa-stack">
+													<i class="material-icons star_off">star_border</i>
+												</span>
+											</div>
+											<h4>
+												<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=28">Бейсболка с вышивкой</a>
+											</h4>
+											<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ..</p>
+
+											<div class="product-price-and-shipping">
+												<div class="price">
+                                                          8509 ₽
+                                                         <span class="price-tax">Ex Tax: 78.46 ₽</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="product-layout product-grid2 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<div class="product-thumb row">
+									<div class="image col-xs-12">
+
+										<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=47">
+											<img class="image_thumb" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/03-285x371.jpg" title="Кожанные боевые ботинки" alt="Кожанные боевые ботинки">
+											<img class="image_thumb_swap" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/03-1-285x371.jpg" title="Кожанные боевые ботинки" alt="Кожанные боевые ботинки">
+										</a>
+										<div class="button-group">
+											<button class="btn-cart " type="button" title="Добавить в корзину" onclick="cart.add('47')">
+
+												<i class="material-icons">shopping_cart</i>
+												<span class="hidden-xs hidden-sm hidden-md">Добавить в корзину
+                                            </span>
+												<span class="loading">
+													<i class="material-icons">cached</i></span></button>
+											<button class="btn-wishlist" title="Добавить в виш лист" onclick="wishlist.add('47');">
+												<i class="material-icons icon-wishlist">favorite_border</i>
+												<span title="Добавить в виш лист">Добавить в виш лист</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-compare" title="Add to compare" onclick="compare.add('47');">
+												<i class="material-icons icon-exchange">equalizer</i>
+												<span title="Add to compare">Add to compare</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-quickview" type="button" title="" onclick="tt_quickview.ajaxView('https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=47')">
+												<i class="material-icons quick_view_icon">visibility</i>
+												<span title=""></span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+										</div>
+									</div>
+
+									<div class="thumb-description col-xs-12">
+										<div class="caption">
+											<h4>
+												<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=47">Кожанные боевые ботинки</a>
+											</h4>
+											<p class="description">01BASIC BACKPACK WITH ZIP CLOSURE DOUBLE COMPARTMENT
+
+
+
+
+
+
+
+
+..</p>
+
+											<div class="product-price-and-shipping">
+												<div class="price">
+                                                          8509 ₽
+                                                         <span class="price-tax">Ex Tax: 78.46 ₽</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="product-layout product-grid2 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<div class="product-thumb row">
+									<div class="image col-xs-12">
+
+										<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=33">
+											<img class="image_thumb" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/16-285x371.jpg" title="Военный шлем Maikun" alt="Военный шлем Maikun">
+											<img class="image_thumb_swap" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/16-1-285x371.jpg" title="Военный шлем Maikun" alt="Военный шлем Maikun">
+										</a>
+										<div class="button-group">
+											<button class="btn-cart " type="button" title="Добавить в корзину" onclick="cart.add('33')">
+
+												<i class="material-icons">shopping_cart</i>
+												<span class="hidden-xs hidden-sm hidden-md">Добавить в корзину
+                                            </span>
+												<span class="loading">
+													<i class="material-icons">cached</i></span></button>
+											<button class="btn-wishlist" title="Добавить в виш лист" onclick="wishlist.add('33');">
+												<i class="material-icons icon-wishlist">favorite_border</i>
+												<span title="Добавить в виш лист">Добавить в виш лист</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-compare" title="Add to compare" onclick="compare.add('33');">
+												<i class="material-icons icon-exchange">equalizer</i>
+												<span title="Add to compare">Add to compare</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-quickview" type="button" title="" onclick="tt_quickview.ajaxView('https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=33')">
+												<i class="material-icons quick_view_icon">visibility</i>
+												<span title=""></span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+										</div>
+									</div>
+
+									<div class="thumb-description col-xs-12">
+										<div class="caption">
+											<h4>
+												<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=33">Военный шлем Maikun</a>
+											</h4>
+											<p class="description">Imagine the advantages of going big without slowing down. The big 19" 941BW monitor combines wi..</p>
+
+											<div class="product-price-and-shipping">
+												<div class="price">
+                                                          1687 ₽
+                                                         <span class="price-tax">Ex Tax: 156.92 ₽</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="product-layout product-grid2 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<div class="product-thumb row">
+									<div class="image col-xs-12">
+
+										<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=48">
+											<img class="image_thumb" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/18-285x371.jpg" title="ремень Maxpedition Triad" alt="ремень Maxpedition Triad">
+											<img class="image_thumb_swap" src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/18-1-285x371.jpg" title="ремень Maxpedition Triad" alt="ремень Maxpedition Triad">
+										</a>
+										<div class="button-group">
+											<button class="btn-cart " type="button" title="Добавить в корзину" onclick="cart.add('48')">
+
+												<i class="material-icons">shopping_cart</i>
+												<span class="hidden-xs hidden-sm hidden-md">Добавить в корзину
+                                            </span>
+												<span class="loading">
+													<i class="material-icons">cached</i></span></button>
+											<button class="btn-wishlist" title="Добавить в виш лист" onclick="wishlist.add('48');">
+												<i class="material-icons icon-wishlist">favorite_border</i>
+												<span title="Добавить в виш лист">Добавить в виш лист</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-compare" title="Add to compare" onclick="compare.add('48');">
+												<i class="material-icons icon-exchange">equalizer</i>
+												<span title="Add to compare">Add to compare</span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+											<button class="btn-quickview" type="button" title="" onclick="tt_quickview.ajaxView('https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=48')">
+												<i class="material-icons quick_view_icon">visibility</i>
+												<span title=""></span>
+												<span class="loading">
+													<i class="material-icons">cached</i>
+												</span>
+											</button>
+										</div>
+									</div>
+
+									<div class="thumb-description col-xs-12">
+										<div class="caption">
+											<h4>
+												<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;path=20&amp;product_id=48">ремень Maxpedition Triad</a>
+											</h4>
+											<p class="description">More room to move.
+
+			With 80GB or 160GB of storage and up to 40 hours of battery life, the new..</p>
+
+											<div class="product-price-and-shipping">
+												<div class="price">
+                                                          8509 ₽
+                                                         <span class="price-tax">Ex Tax: 78.46 ₽</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="category-pagination">
+						<div class="col-xs-6 text-left">Showing 1 to 9 of 14 (2 Pages)</div>
+						<div class="col-xs-6 text-right">
+							<ul class="pagination">
+								<li class="active">
+									<span>1</span></li>
+								<li>
+									<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;page=2">2</a>
+								</li>
+								<li>
+									<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;page=2">&gt;</a>
+								</li>
+								<li>
+									<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20&amp;page=2">&gt;|</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

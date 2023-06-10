@@ -1,0 +1,150 @@
+{% import "partials/_mixins.njk" as mixins %}
+{% import "partials/_content-includes.njk" as includes %}
+{% import "components/controls/button/button.njk" as button %}
+
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Your Store</title>
+{# <base href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/"> #}
+<meta name="description" content="My Store">
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/jquery/jquery-2.1.1.min.js"></script>
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:100, 200, 300,300italic,400,600,400italic,600italic,700,700italic,800,800italic,500,500italic">
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&amp;display=swap" rel="stylesheet" type="text/css">
+<!--<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--<link href="catalog/view/theme//stylesheet/TemplateTrip/bootstrap.min.css" rel="stylesheet" media="screen" />-->
+
+<link href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.css" rel="stylesheet" media="screen">
+<link href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/jquery/owl-carousel/owl.theme.default.min.css" rel="stylesheet" media="screen">
+<link href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/theme/OPCTM015/stylesheet/TemplateTrip/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/theme/OPCTM015/stylesheet/stylesheet.css" rel="stylesheet">
+<link href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/theme/OPCTM015/stylesheet/TemplateTrip/ttblogstyle.css" rel="stylesheet" type="text/css">
+<link href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/theme/OPCTM015/stylesheet/TemplateTrip/newsletter.css" rel="stylesheet" type="text/css">
+<link href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/theme/OPCTM015/stylesheet/TemplateTrip/category-feature.css" rel="stylesheet" type="text/css">
+<link href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/theme/OPCTM015/stylesheet/TemplateTrip/animate.css" rel="stylesheet" type="text/css">
+<link href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/theme/OPCTM015/stylesheet/TemplateTrip/ttcountdown.css" rel="stylesheet" type="text/css">
+<link href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/theme/OPCTM015/stylesheet/TemplateTrip/menu.css" rel="stylesheet" type="text/css">
+
+<link href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/theme/OPCTM015/stylesheet/TemplateTrip/lightbox.css" rel="stylesheet" type="text/css">
+
+<link href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/jquery/swiper/css/swiper.min.css" type="text/css" rel="stylesheet" media="screen">
+<link href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/jquery/swiper/css/opencart.css" type="text/css" rel="stylesheet" media="screen">
+
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/common.js"></script>
+
+<!-- TemplateTrip custom Theme JS START -->
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/TemplateTrip/addonScript.js"></script>
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/TemplateTrip/menu.js"></script>
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/TemplateTrip/tt_quickview.js"></script>
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/TemplateTrip/inview.js"></script>
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/TemplateTrip/parallex.js"></script>
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/TemplateTrip/theia-sticky-sidebar.min.js"></script>
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/TemplateTrip/lightbox-2.6.min.js"></script>
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/TemplateTrip/waypoints.min.js"></script>
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/TemplateTrip/bootstrap-notify.min.js"></script>
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/TemplateTrip/ttcountdown.js"></script>
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js"></script>
+<!-- TemplateTrip custom Theme JS END -->
+
+<link href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/" rel="canonical">
+<link href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/catalog/cart.png" rel="icon">
+
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/jquery/swiper/js/swiper.jquery.js"></script>
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/TemplateTrip/jquery.bpopup.min.js"></script>
+<script src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/view/javascript/TemplateTrip/jquery.cookie.js"></script>
+
+</head>
+<body>
+
+{# Variables array for passing to components #}
+{% set app = {
+  isIndex: true if pageType == 'mainPage' else false,
+	isFullWidth: true if pageWidth == 'fullWidth' else false,
+	is404: true if pageType == '404' else false,
+	hideH1: true if hideH1 == true else false,
+	hideBreadcrumbs: true if hideBreadcrumbs == true else false,
+	path: 'Главная/' + (path if path) + pageTitle
+} %}
+
+{% include "partials/_svg-sprite.njk" %}
+
+<div class="c-page">
+	{% include "layouts/_header.njk" %}
+
+	<div class="header-content-title">
+		<div class="page-title-wrapper">
+			<div class="container">
+				<div class="breadcrub">
+					<h1 class="category-name page-title">Одежда</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=common/home">
+								<i class="material-icons">Домой</i>
+							</a>
+						</li>
+						<li>
+							<a class="last-breadcrumb">Одежда</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% set contentClassName = {
+		'content_index pb-0': app.isIndex,
+		'content_detail': not app.isIndex,
+		'content_textpage default-typo': app.isTextPage,
+		'pt-0': noPaddingTop,
+		'pb-0': noPaddingBottom
+	} %}
+
+	<div class="content {{ contentClassName | implode_classname }}">
+		{% if not app.isFullWidth %}
+			<div class="container">
+		{% endif %}
+
+			<div class="content__body">
+				<main class="content__item content__main">
+					{% if app.isIndex %}
+						{% include "partials/_indexblocks.njk" %}
+					{% endif %}
+
+					{% if not app.isIndex and not app.hideH1 %}
+						{% if app.isFullWidth %}
+							<div class="container">
+						{% endif %}
+
+						<h1 class="c-title c-title_size_xl">{{ pageTitle }}</h1>
+
+						{% if app.isFullWidth %}
+							</div>
+							<!-- /.container -->
+						{% endif %}
+					{% endif %}
+
+					{% block content %}
+						{# content #}
+					{% endblock %}
+				</main>
+			</div>
+			<!-- /.content__body -->
+
+		{% if not app.isFullWidth %}
+			</div>
+			<!-- /.container -->
+		{% endif %}
+	</div>
+	<!-- /.content -->
+
+	{% if not hideFooter %}
+		{% include "layouts/_footer.njk" %}
+	{% endif %}
+</div>
+</body>
+</html>

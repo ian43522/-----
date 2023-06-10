@@ -1,0 +1,518 @@
+<header>
+	<div class="header">
+		<div class="full-header">
+			<div class="container">
+				<div class="header-left">
+					<div id="logo">
+						<a href="/index.html"><img src="\images\Logo.png" title="Your Store" alt="Your Store" class="img-responsive"></a>
+					</div>
+				</div>
+				<div class="header-top-right">
+					<div id="top-links" class="nav pull-right">
+						<ul class="list-inline">
+							<li class="ttsearch">
+								<div id="search" class="input-group">
+									<span class="ttsearch_button">
+										<i class="material-icons icon-search">search</i>
+										<i class="material-icons icon-close">clear</i>
+									</span>
+									<div class="ttsearchtoggle">
+										<input type="text" name="search" value="" placeholder="Search" class="form-control input-lg" autocomplete="off">
+										<ul class="dropdown-menu"></ul>
+										<div class="live-search" style="display: none;">
+											<ul></ul>
+											<div class="result-text"></div>
+										</div>
+										<span class="input-group-btn">
+											<button type="button" class="btn btn-default btn-lg">
+												<i class="material-icons icon-search">search</i>
+											</button>
+										</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="account-nav dropdown header_user_info">
+								<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=account/account" title="my Account" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="material-icons user">perm_identity</i>
+									<span class="ttuserheading">my Account</span>
+									<i class="material-icons expand-more">expand_more</i>
+									<i class="material-icons expand-less">expand_less</i>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right account-link-toggle">
+									<li>
+										<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=account/login">
+											<i class="material-icons">lock</i> Login</a>
+									</li>
+									<li>
+										<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=account/register">
+											<i class="material-icons reg-person">person</i> Register</a>
+									</li>
+									<li>
+										<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=account/wishlist" id="wishlist-total" title="Wish List (0)">
+											<i class="material-icons favorite">favorite_border</i>
+											<span class="hidden-sm hidden-md">Wish List (0)</span></a>
+									</li>
+									<li class="ttlanguage">
+										<div class="pull-left">
+											<form action="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=common/language/language" method="post" enctype="multipart/form-data" id="form-language">
+												<div class="btn-group">
+													<button class="btn btn-link">
+
+														<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/catalog/language/en-gb/en-gb.png" alt="English" title="English">
+														<span class="hidden-xs hidden-sm hidden-md">Language</span></button>
+													<ul>
+														<li>
+															<button class="btn btn-link btn-block language-select selected" type="button" name="en-gb"><img src="catalog/language/en-gb/en-gb.png" alt="English" title="English"> English</button>
+														</li>
+														<li>
+															<button class="btn btn-link btn-block language-select " type="button" name="ar-lb"><img src="catalog/language/ar-lb/ar-lb.png" alt="Arabic" title="Arabic"> Arabic</button>
+														</li>
+													</ul>
+												</div>
+												<input type="hidden" name="code" value="">
+												<input type="hidden" name="redirect" value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=46">
+											</form>
+										</div>
+									</li>
+									<li class="ttcurrency">
+										<div class="pull-left">
+											<form action="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=common/currency/currency" method="post" enctype="multipart/form-data" id="form-currency">
+												<div class="btn-group">
+													<button class="btn btn-link">
+														<strong>$</strong>
+														<span class="hidden-xs hidden-sm hidden-md">Currency</span></button>
+													<ul>
+														<li>
+															<button class="currency-select btn btn-link btn-block " type="button" name="EUR">€ Euro</button>
+														</li>
+														<li>
+															<button class="currency-select btn btn-link btn-block " type="button" name="GBP">£ Pound Sterling</button>
+														</li>
+														<li>
+															<button class="currency-select btn btn-link btn-block selected" type="button" name="USD">$ US Dollar</button>
+														</li>
+													</ul>
+												</div>
+												<input type="hidden" name="code" value="">
+												<input type="hidden" name="redirect" value="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=46">
+											</form>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="ttcart">
+								<div id="cart" class="btn-group">
+									<button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="btn btn-inverse btn-block btn-lg dropdown-toggle">
+										<i class="material-icons shopping-cart">shopping_cart</i>
+										<span id="cart-total">1</span>
+										<span class="cart-heading">Cart</span>
+									</button>
+									<ul class="dropdown-menu pull-right header-cart-toggle">
+										<li class="cart-product">
+											<table class="table table-striped">
+												<tbody>
+													<tr>
+														<td class="text-center image">
+															<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=41"><img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/05-70x91.jpg" alt="army uniform jacket" title="army uniform jacket" class="img-thumbnail"></a>
+														</td>
+														<td class="text-left name">
+															<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=41">army uniform jacket</a>
+														</td>
+														<td class="text-right">x 1</td>
+														<td class="text-right amount">$122.00</td>
+														<td class="text-center button">
+															<button type="button" onclick="cart.remove('72');" title="Remove" class="btn btn-danger btn-xs">
+																<i class="material-icons close-clear">clear</i>
+															</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li>
+											<div>
+												<table class="table table-bordered">
+													<tbody>
+														<tr>
+															<td class="text-right">
+																<strong>Sub-Total</strong>
+															</td>
+															<td class="text-right price-total">$100.00</td>
+														</tr>
+														<tr>
+															<td class="text-right">
+																<strong>Eco Tax (-2.00)</strong>
+															</td>
+															<td class="text-right price-total">$2.00</td>
+														</tr>
+														<tr>
+															<td class="text-right">
+																<strong>VAT (20%)</strong>
+															</td>
+															<td class="text-right price-total">$20.00</td>
+														</tr>
+														<tr>
+															<td class="text-right">
+																<strong>Total</strong>
+															</td>
+															<td class="text-right price-total">$122.00</td>
+														</tr>
+													</tbody>
+												</table>
+												<p class="text-right">
+													<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=checkout/cart">
+														<strong> View Cart</strong>
+													</a>
+													<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=checkout/checkout">
+														<strong>Checkout</strong>
+													</a>
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-top-left">
+					<div class="header-left-cms">
+						<aside id="header-left">
+							<div class="main-category-list left-menu">
+								<div class="cat-menu">
+									<div class="TT-panel-heading default-open" title="Shop Categories">
+										<i class="material-icons">dehaze</i>
+										<i class="material-icons close-icon">close</i>
+										<span>Shop Categories</span>
+									</div>
+									<div class="tt-menu horizontal-menu tt-menu-bar" id="tt-menu-1019">
+										<ul class="ul-top-items" style="display: block;">
+											<li class="li-top-item mega-menu flyout-menu">
+												<a class="a-top-link" href="\clothes.html">
+													<span>Армейская одежда</span>
+												</a>
+												<!-- Mega Menu -->
+
+												<div class="mega-menu-container sub-menu-container " style="margin-left: -325px;">
+													<div class="col-sm-3 sub-item2-content" data-cols="3">
+														<a class="a-mega-second-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20">
+															<h4>
+																<strong>Армейская одежда</strong>
+															</h4>
+														</a>
+														<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/banners/category-img-01-300x300.jpg" alt="Army Clothes" class="mega-second-image">
+
+														<div class="sub_item3-content">
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_141">
+																<h5>Barbells</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_140">
+																<h5>Isometrics</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_26">
+																<h5>Compound</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=20_132">
+																<h5>Hack Squat</h5>
+															</a>
+														</div>
+													</div>
+
+													<div class="col-sm-3 sub-item2-content" data-cols="3">
+														<a class="a-mega-second-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=128">
+															<h4>
+																<strong>For Men</strong>
+															</h4>
+														</a>
+														<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/banners/category-img-03-300x300.jpg" alt="For Men" class="mega-second-image">
+
+														<div class="sub_item3-content">
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=128_149">
+																<h5>Bohemian</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=128_146">
+																<h5>Casual</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=128_147">
+																<h5>Exotic</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=128_148">
+																<h5>Grunge</h5>
+															</a>
+														</div>
+													</div>
+
+													<div class="col-sm-3 sub-item2-content" data-cols="3">
+														<a class="a-mega-second-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=130">
+															<h4>
+																<strong>For Women</strong>
+															</h4>
+														</a>
+														<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/banners/category-img-04-300x300.jpg" alt="For Women" class="mega-second-image">
+
+														<div class="sub_item3-content">
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=130_153">
+																<h5>Ethnic</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=130_152">
+																<h5>Girly</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=130_150">
+																<h5>Luxurious</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=130_151">
+																<h5>Streetwear</h5>
+															</a>
+														</div>
+													</div>
+
+													<div class="col-sm-3 sub-item2-content" data-cols="3">
+														<a class="a-mega-second-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=159">
+															<h4>
+																<strong>Cool-Down</strong>
+															</h4>
+														</a>
+														<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/banners/category-img-02-300x300.jpg" alt="Cool-Down" class="mega-second-image">
+
+														<div class="sub_item3-content">
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=159_162">
+																<h5>airsoft</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=159_163">
+																<h5>CrossFit</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=159_160">
+																<h5>Isometrics</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=159_161">
+																<h5>parts</h5>
+															</a>
+														</div>
+													</div>
+
+												</div>
+
+												<!-- Flyout Menu -->
+											</li>
+
+											<li class="li-top-item mega-menu flyout-menu">
+												<a class="a-top-link" href="index.php?route=product/category&amp;path=25">
+													<span>Гимхана</span>
+												</a>
+												<!-- Mega Menu -->
+
+												<div class="mega-menu-container sub-menu-container " style="margin-left: -487.888px;">
+													<div class="col-sm-2 sub-item2-content" data-cols="2">
+														<a class="a-mega-second-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=25">
+															<h4>
+																<strong>Гимхана</strong>
+															</h4>
+														</a>
+
+														<div class="sub_item3-content">
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=25_155">
+																<h5>Boot Camp</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=25_154">
+																<h5>bowling</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=25_157">
+																<h5>curling</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=25_158">
+																<h5>freediving</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=25_144">
+																<h5>Lagenlook</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=25_142">
+																<h5>Pickleball</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=25_156">
+																<h5>Stability Ball</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=25_143">
+																<h5>Stool ball</h5>
+															</a>
+															<a class="a-mega-third-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=25_99">
+																<h5>Douches</h5>
+															</a>
+														</div>
+													</div>
+
+													<div class="product-owl col-sm-4 owl-loaded owl-carousel owl-drag">
+														<div class="owl-stage-outer">
+															<div class="owl-stage" style="transform: translate3d(-981px, 0px, 0px); transition: all 0.25s ease 0s; width: 1962px;">
+																<div class="owl-item cloned" style="width: 327px;">
+																	<div class="col-sm-2 sub-item2-content div-product" data-cols="2">
+																		<div class="product-img">
+																			<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/09-250x300.jpg" alt="paracord safety bracelet" class="mega-second-image">
+																		</div>
+																		<a class="a-mega-second-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=43">
+																			<h4>
+																				<strong>paracord safety bracelet</strong>
+																			</h4>
+																			<div class="price">$14.00</div>
+																		</a>
+																	</div>
+																</div>
+																<div class="owl-item cloned" style="width: 327px;">
+																	<div class="col-sm-2 sub-item2-content div-product" data-cols="2">
+																		<div class="product-img">
+																			<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/10-250x300.jpg" alt="Camouflage cargo pant" class="mega-second-image">
+																		</div>
+																		<a class="a-mega-second-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=44">
+																			<h4>
+																				<strong>Camouflage cargo pant</strong>
+																			</h4>
+																			<div class="price">$1,202.00</div>
+																		</a>
+																	</div>
+																</div>
+																<div class="owl-item" style="width: 327px;">
+																	<div class="col-sm-2 sub-item2-content div-product" data-cols="2">
+																		<div class="product-img">
+																			<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/09-250x300.jpg" alt="paracord safety bracelet" class="mega-second-image">
+																		</div>
+																		<a class="a-mega-second-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=43">
+																			<h4>
+																				<strong>paracord safety bracelet</strong>
+																			</h4>
+																			<div class="price">$14.00</div>
+																		</a>
+																	</div>
+																</div>
+																<div class="owl-item active" style="width: 327px;">
+																	<div class="col-sm-2 sub-item2-content div-product" data-cols="2">
+																		<div class="product-img">
+																			<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/10-250x300.jpg" alt="Camouflage cargo pant" class="mega-second-image">
+																		</div>
+																		<a class="a-mega-second-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=44">
+																			<h4>
+																				<strong>Camouflage cargo pant</strong>
+																			</h4>
+																			<div class="price">$1,202.00</div>
+																		</a>
+																	</div>
+																</div>
+																<div class="owl-item cloned" style="width: 327px;">
+																	<div class="col-sm-2 sub-item2-content div-product" data-cols="2">
+																		<div class="product-img">
+																			<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/09-250x300.jpg" alt="paracord safety bracelet" class="mega-second-image">
+																		</div>
+																		<a class="a-mega-second-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=43">
+																			<h4>
+																				<strong>paracord safety bracelet</strong>
+																			</h4>
+																			<div class="price">$14.00</div>
+																		</a>
+																	</div>
+																</div>
+																<div class="owl-item cloned" style="width: 327px;">
+																	<div class="col-sm-2 sub-item2-content div-product" data-cols="2">
+																		<div class="product-img">
+																			<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/cache/catalog/demo/product/10-250x300.jpg" alt="Camouflage cargo pant" class="mega-second-image">
+																		</div>
+																		<a class="a-mega-second-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/product&amp;product_id=44">
+																			<h4>
+																				<strong>Camouflage cargo pant</strong>
+																			</h4>
+																			<div class="price">$1,202.00</div>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="owl-nav">
+															<button type="button" role="presentation" class="owl-prev">Prev<span aria-label="Previous">‹</span>
+															</button>
+															<button type="button" role="presentation" class="owl-next">Next<span aria-label="Next">›</span>
+															</button>
+														</div>
+														<div class="owl-dots disabled"></div>
+													</div>
+
+													<div class="col-sm-6 sub-item2-content" data-cols="6">
+														<h4>
+															<strong>menu-banner</strong>
+														</h4>
+														<div class="menu-banner">
+															<a href="#">
+																<img src="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/image/catalog/demo/banners/menu-banner.jpg" alt="menu-banner">
+															</a>
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quos veritatis distinctio est ipsam repudiandae vel totam asperiores quas! Debitis quam voluptate fuga iure ut deleniti, illum laborum quaerat aut.</p>
+														</div>
+													</div>
+
+												</div>
+
+												<!-- Flyout Menu -->
+											</li>
+
+											<li class="li-top-item flyout-menu">
+												<a class="a-top-link" href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=67">
+													<span>тренировка</span>
+												</a>
+												<!-- Mega Menu -->
+
+												<!-- Flyout Menu -->
+
+												<div class="flyout-menu-container sub-menu-container">
+													<ul class="ul-second-items">
+														<li class="li-second-items">
+															<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=67_128" class="a-second-link a-item">
+																<span class="a-second-title">For Men</span>
+																<i class="material-icons chevron-right">chevron_right</i>
+															</a>
+															<div class="flyout-third-items">
+																<ul class="ul-third-items">
+																	<li class="li-third-items">
+																		<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=67_128_149" class="a-third-link">
+																			<span class="a-third-title">Bohemian</span></a>
+																	</li>
+																	<li class="li-third-items">
+																		<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=67_128_146" class="a-third-link">
+																			<span class="a-third-title">Casual</span></a>
+																	</li>
+																	<li class="li-third-items">
+																		<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=67_128_147" class="a-third-link">
+																			<span class="a-third-title">Exotic</span></a>
+																	</li>
+																	<li class="li-third-items">
+																		<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=67_128_148" class="a-third-link">
+																			<span class="a-third-title">Grunge</span></a>
+																	</li>
+																</ul>
+															</div>
+														</li>
+														<li class="li-second-items">
+															<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/category&amp;path=67_130" class="a-second-link a-item">
+																<span class="a-second-title">For Women</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+
+											<li class="li-top-item flyout-menu">
+												<a class="a-top-link" href="index.php?route=information/contact">
+													<span>связаться с нами</span>
+												</a>
+											</li>
+
+
+
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</aside>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

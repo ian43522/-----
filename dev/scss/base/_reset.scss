@@ -1,0 +1,133 @@
+@import "../helpers/variables";
+
+
+/****************************************************************************/
+/* RESET */
+/****************************************************************************/
+
+/**
+* A very simple reset that sits on top of Normalize.css.
+*/
+
+body,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+fieldset, legend {
+	margin: 0;
+	padding: 0;
+}
+
+
+/**
+* Remove default table spacing.
+*/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**
+* 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+*    on fieldsets.
+*/
+
+fieldset {
+	min-width: 0; /* [1] */
+	border: 0;
+}
+
+
+/**
+* Responsive images.
+* 1. IE fix
+* 2. Setting `vertical-align` removes the whitespace that appears under `img`
+*    elements when they are dropped into a page as-is. Safer alternative to
+*    using `display: block;`.
+*/
+
+img {
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	width: auto\9; /* [1] */
+	vertical-align: middle; /* [2] */
+}
+
+
+/**
+* Reset browser styles for number input
+*/
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+blockquote, q{quotes:none}
+blockquote:before, blockquote:after, q:before, q:after{content:''; content:none}
+
+body{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: $font-primary;
+}
+
+ol, ul{list-style:none}
+
+button {
+    cursor: pointer;
+    border: 0;
+    letter-spacing: inherit;
+    -webkit-font-smoothing: inherit;
+}
+
+input[placeholder]          {text-overflow:ellipsis;}
+
+input::-webkit-input-placeholder   {color: $color-text;}
+input::-moz-placeholder            {color: $color-text;}
+input:-moz-placeholder             {color: $color-text;}
+input:-ms-input-placeholder        {color: $color-text;}
+
+textarea {
+	resize: vertical;
+}
+
+
+/**
+* Reset telephone links styles
+*/
+
+a[href^=tel] {
+    text-decoration: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+
+/**
+* Prevent SVG-icons from overflowing parent block
+*/
+
+svg {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+/**
+* Controls inherit font-family by default
+*/
+
+button, input, optgroup, select, textarea {
+	font-family: inherit;
+}

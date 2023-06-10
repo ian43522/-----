@@ -1,0 +1,18 @@
+{# SVG-иконки #}
+{% macro icon(array, params) %}
+
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ array.className }} svg-ico" {{ array.attrs | implode_attrs | safe }}>
+	<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ array.file }}#{{ array.id }}"></use>
+</svg>
+
+{% endmacro %}
+
+{# Видео #}
+{% macro video(dims='16by9', url) %}
+
+<div class="embed-responsive embed-responsive-{{ dims }}">
+	<iframe class="embed-responsive-item" src="{{ url }}?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<!-- /.embed-responsive -->
+
+{% endmacro %}

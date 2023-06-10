@@ -1,0 +1,18 @@
+/****************************************************************************/
+/* FONT-FACE */
+/****************************************************************************/
+
+
+@mixin font($name, $filename, $style: normal, $weight: normal) {
+	@font-face {
+		font-family: $name;
+		src: url("fonts/#{$filename}.eot");
+		src: url("fonts/#{$filename}.eot?#iefix")format("embedded-opentype"),
+		   url("fonts/#{$filename}.woff2") format("woff2"),
+		   url("fonts/#{$filename}.woff") format("woff"),
+		   url("fonts/#{$filename}.ttf") format("truetype");
+		font-style: $style;
+		font-weight: $weight;
+		font-display: swap;
+	}
+}

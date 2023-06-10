@@ -1,0 +1,30 @@
+/****************************************************************************/
+/* Стили шаблона */
+/****************************************************************************/
+
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+
+@import "base/box-sizing";
+@import "base/normalize";
+@import "base/reset";
+@import "base/fonts";
+@import "base/vendor";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+@import "components/buttons";
+@import "components/container";
+
+@import "layout/page";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/main";

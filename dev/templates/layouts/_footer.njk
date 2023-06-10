@@ -1,0 +1,270 @@
+<footer>
+	<div class="footer-container">
+		<div class="footer-top">
+			<div class="container">
+				<div class="footer-top-cms">
+					<aside id="footer-top">
+						<div class="newletter-subscribe">
+							<div id="newletter-boxes" class="newletter-container">
+								<div id="dialog-normal" class="window">
+									<div class="box">
+										<div class="newletter-title col-sm-6">
+											<h2 class="tt-title">получайте свежие предложения</h2>
+											<span class="newletter-desc">Подпишитесь и получайте свежие предложения, акции и обновления магазина</span>
+										</div>
+										<div class="box-content newleter-content col-sm-6">
+											<label></label>
+											<div id="form_subscribe">
+												<form name="subscribe" id="subscribe">
+													<input type="text" placeholder="Твой email адрес" value="" name="subscribe_email" id="subscribe_email">
+													<input type="hidden" value="" name="subscribe_name" id="subscribe_name">
+													<a class="button btn btn-primary" onclick="email_subscribe()">
+														<span>Подписаться</span>
+														<i class="material-icons">near_me</i>
+													</a>
+
+												</form>
+											</div>
+											<!-- /#form_subscribe -->
+											<div id="notification-normal"></div>
+										</div>
+									</div>
+									<!-- /.box-content -->
+								</div>
+							</div>
+
+							<script>
+								function email_subscribe() {
+									$.ajax({
+										type: 'post',
+										url: 'index.php?route=extension/module/ttnewslettersubscribe/subscribe',
+										dataType: 'html',
+										data: $("#subscribe").serialize(),
+										success: function (html) {
+											try {
+
+												eval(html);
+
+											} catch (e) {}
+
+										}
+									});
+
+								}
+								function email_unsubscribe() {
+									$.ajax({
+										type: 'post',
+										url: 'index.php?route=extension/module/ttnewslettersubscribe/unsubscribe',
+										dataType: 'html',
+										data: $("#subscribe").serialize(),
+										success: function (html) {
+											try {
+
+												eval(html);
+
+											} catch (e) {}
+										}
+									});
+									$('html, body')
+										.delay(1500)
+										.animate({
+											scrollTop: 0
+										}, 'slow');
+
+								}
+							</script>
+							<script>
+								$(document).ready(function () {
+									$('#subscribe_email').keypress(function (e) {
+										if (e.which == 13) {
+											e.preventDefault();
+											email_subscribe();
+										}
+										var name = $(this).val();
+										$('#subscribe_name').val(name);
+									});
+									$('#subscribe_email').change(function () {
+										var name = $(this).val();
+										$('#subscribe_name').val(name);
+									});
+
+								});
+							</script>
+						</div>
+
+					</aside>
+
+				</div>
+			</div>
+		</div>
+		<div class="container bottom-to-top hb-animate-element hb-in-viewport">
+
+			<div class="row">
+				<div class="footer-column footer-left-cms col-xs-3">
+					<aside id="footer-left">
+						<div class="html-content">
+							<div class="box-content">
+								<div class="ttfotter-logo">
+									<a href="#"><img src="images\foot-logo.png" alt="fotter-logo"></a>
+									<div class="ttdesc">Следуют большим страданиям те, кто преследует удовольствие с помощью разума</div>
+								</div>
+							</div>
+						</div>
+
+					</aside>
+
+				</div>
+
+				<div class="col-xs-3 footer-column footer-information footer-information">
+					<h5>Информация</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=information/information&amp;information_id=4">О нас</a>
+						</li>
+						<li>
+							<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=information/information&amp;information_id=6">Информация о доставке</a>
+						</li>
+						<li>
+							<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=information/information&amp;information_id=3">Соглашения о конфиденциаьности</a>
+						</li>
+						<li>
+							<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=information/information&amp;information_id=5">Условия и положения</a>
+						</li>
+						<li>
+							<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=account/voucher">Сертификаты на подарок</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-3 footer-column footer-Extras">
+					<h5>Доп услуги</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/manufacturer">Бренды</a>
+						</li>
+						<li>
+							<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=account/voucher">Сертификаты на подарок</a>
+						</li>
+						<li>
+							<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=affiliate/login">Партнеры</a>
+						</li>
+						<li>
+							<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/special">Специальные предложения</a>
+						</li>
+						<li>
+							<a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=information/sitemap">Карта сайта</a>
+						</li>
+					</ul>
+				</div>
+
+				<!--<div class="col-sm-4 footer-column footer-my-account">
+				<h5>My Account</h5>
+				<ul class="list-unstyled">
+				<li><a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=account/account">My Account</a></li>
+				<li><a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=account/wishlist">Wish List</a></li>
+				<li><a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=account/voucher">Gift Certificates</a></li>
+				<li><a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=account/return/add">Returns</a></li>
+				<li><a href="https://opencart.templatetrip.com/OPCTM01/OPCTM015_military/index.php?route=product/special">Specials</a></li>
+				</ul>
+			</div>-->
+
+				<div class="footer-column footer-right-cms col-sm-3">
+					<aside id="footer-right">
+						<div class="html-content">
+							<div class="box-content">
+								<div class="contact-us">
+									<h5 class="">Информация магазина</h5>
+									<ul style="display: block;" class="list-unstyled">
+										<li class="contact-detail">
+											<div class="data address">
+												<i class="material-icons">Локация</i>
+												<div class="contact-address">Магазин<br>Москва</div>
+											</div>
+										</li>
+										<li class="contact">
+											<div class="data contact">
+												<i class="material-icons">Телефон</i>
+												<span class="phone">
+													<a href="callto:0123456789">8 977 123 45 66</a>
+												</span>
+											</div>
+										</li>
+										<li class="email">
+											<div class="data email">
+												<i class="material-icons">Почта</i>
+												<span class="email-address">
+													<a href="mailto:demo@gmail.com">excile435@gmail.com</a>
+												</span>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</aside>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom-footer">
+			<div class="container bottom-to-top hb-animate-element hb-in-viewport">
+				<div class="row">
+
+					<div class="footer-bottom-cms col-sm-6">
+						<aside id="footer-bottom">
+							<div class="html-content">
+								<div class="box-content">
+									<div class="follow-us">
+										<h5>Follow us</h5>
+										<ul class="list-unstyled">
+											<li class="facebook">
+												<a href="#">
+													<p>Facebook</p>
+												</a>
+											</li>
+											<li class="twitter">
+												<a href="#">
+													<p>Twitter</p>
+												</a>
+											</li>
+											<li class="rss">
+												<a href="#">
+													<p>rss</p>
+												</a>
+											</li>
+											<li class="youtube">
+												<a href="#">
+													<p>YouTube</p>
+												</a>
+											</li>
+											<li class="pinterest">
+												<a href="#">
+													<p>Pinterest</p>
+												</a>
+											</li>
+											<li class="vimeo">
+												<a href="#">
+													<p>vimeo</p>
+												</a>
+											</li>
+											<li class="instagram">
+												<a href="#">
+													<p>instagram</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</aside>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

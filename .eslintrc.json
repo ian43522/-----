@@ -1,0 +1,15 @@
+{
+  "extends": "standard",
+  "plugins": [
+    "standard",
+    "promise"
+  ],
+  "rules": {
+    "semi": [2, "always"],
+    "no-var": [2, "always"]
+  },
+  "env": {
+    "browser": true,
+    "jquery": true
+  }
+}
